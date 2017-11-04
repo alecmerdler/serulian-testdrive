@@ -1,5 +1,22 @@
+from webidl`github.com/serulian/virtualdom` import document
 from "github.com/serulian/debuglib" import Log
+from "github.com/serulian/component" import RenderComponent
+from "github.com/serulian/virtualdom" import Context, Span
+
+function<any> Child() {
+    return "Hello World!"
+}
+
+class App {
+    constructor Declare() {
+        return App.new()
+    }
+
+    function<any> Render(context Context) {
+        return <Span>Hello World!</Span>
+    }
+}
 
 function<void> Run() {
-    Log('Hello World!')
+    RenderComponent(App.Declare(), document.body)
 }
