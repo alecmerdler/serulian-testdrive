@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="http://localhost:8080/index.seru.js"></script>
+        <script>
+            function startApp() {
+                window.Serulian.then(function(serulian) {
+                    // Execute the `Run` function under the `index` module.
+                    serulian.index.Run();
+                }, function(err) {
+                    // Re-raise any errors that occur.
+                    throw err;
+                });
+            }
+      </script>
+    </head>
+    <body onload="startApp()"></body>  
+</html>

@@ -1,0 +1,5 @@
+from "github.com/serulian/debuglib" import Log
+
+function<void> Run() {
+    Log('Hello World!')
+}
